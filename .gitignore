@@ -1,6 +1,8 @@
 /scripts
 /lib
 *.pyc
+*.png
+*.jpg
 .vscode
 pyvenv.cfg
 db.sqlite3
