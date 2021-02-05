@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'users.apps.UsersConfig',
+    'main.apps.MainConfig',
     
     'django.contrib.sites',
     'allauth',
@@ -55,7 +56,7 @@ AUTHENTICATION_BACKENDS = [
 ]
 
 ACCOUNT_EMAIL_REQUIRED = True 
-ACCOUNT_EMAIL_VERIFICATION ="none" 
+ACCOUNT_EMAIL_VERIFICATION = "none" 
 #configuration needed before changing it to "mandatory"
 
 MIDDLEWARE = [
