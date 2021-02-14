@@ -1,4 +1,17 @@
 {% extends 'main/home.html' %}
 {% block context %}
-    <h1>Hello<h1>
+    <h1 style="font-size: 20px">Username</h1>
+    {{u_form.username}}
+    <h1 style="font-size: 20px">Password</h1>
+    {{u_form.email}}
+    {{p_form.image}}
+
+    <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="{{user.profile.image.url}}" alt="Card image cap">
+        <div class="card-body">
+            <h2 class="card-title">{{user.username}}</h2>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+    </div>
 {% endblock context %}
