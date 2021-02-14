@@ -26,8 +26,10 @@
             </ul>
         </header>
         <main>
+        {% block context %}
             <h1>{{user}}</h1>
             <img src="{{user.profile.image.url}}" width="50" height="50"alt="failure">
+        {% endblock context %}
         </main>
         <footer>
 
