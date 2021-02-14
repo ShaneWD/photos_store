@@ -7,3 +7,6 @@ class Pictures(models.Model):
     title = models.CharField(max_length=50, default='')
     description = models.CharField(max_length=200, default='')
     tags = models.CharField(max_length=100, default='')
+
+    def __str__(self):
+        return f"{self.author}: {self.title}"
