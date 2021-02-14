@@ -1,4 +1,4 @@
-ul {
+.ulist {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -6,17 +6,17 @@ ul {
   background-color: rgb(29, 28, 28);
 }
 
-li {
+.list {
   float: right;
   border-left:0.5px solid #bbb;
   border-right:0.5px solid #bbb;
 }
 
-li:last-child {
+.list:last-child {
   border-right: none;
 }
 
-li a {
+.list a {
   display: block;
   color: white;
   text-align: center;
@@ -24,7 +24,7 @@ li a {
   text-decoration: none;
 }
 
-li a:hover:not(.active) {
+.list a:hover:not(.active) {
   background-color: #111;
 }
 

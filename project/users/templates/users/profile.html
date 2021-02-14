@@ -1,6 +1,6 @@
 {% extends 'main.html' %}
 {% block context %}
-
+    {% block title %}<title>Profile</title>{% endblock title %}
     <div class="card" style="width: 600px;">
         <img class="card-img-top" src="{{user.profile.image.url}}" alt="Card image cap">
         <form method="POST" enctype="multipart/form-data">
