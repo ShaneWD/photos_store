@@ -1,40 +1,5 @@
-{% load static %}
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        {% block title %}<title> SET TITLE </title>{% endblock title %}
-        <meta name="description" content="SET DESCRIPTION">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="{% static 'CSS/style.css'  %}">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap" rel="stylesheet">
-
-    </head>
-    <body style="font-family: 'Dosis'">
-        <header>
-            <ul>
-                <li style="float:left"><a class="active" href="{% url 'home' %}">Home</a></li>
-                {% if user.is_authenticated %}
-                    <li><a href="{% url 'account_logout'%}">Logout</a></li>
-                {% else %}
-                    <li><a href="{% url 'account_login'%}">Login</a></li>
-                    <li><a href="{% url 'account_signup'%}">Register</a></li>
-                {% endif %}
-            </ul>
-        </header>
-        <main>
-        {% block context %}
-            <h1>{{user}}</h1>
-            <img src="{{user.profile.image.url}}" width="50" height="50"alt="failure">
-        {% endblock context %}
-        </main>
-        <footer>
-
-        </footer>
-
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-    </body>
-</html>
+{% extends 'main.html' %}
+{% block context %}
+    <h1>{{user}}</h1>
+    <img src="{{user.profile.image.url}}" width="50" height="50"alt="failure">
+{% endblock context%}
