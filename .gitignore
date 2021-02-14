@@ -4,5 +4,6 @@
 *.png
 *.jpg
 .vscode
+.env
 pyvenv.cfg
 db.sqlite3
