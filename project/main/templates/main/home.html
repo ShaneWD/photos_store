@@ -1,7 +1,11 @@
 {% extends 'main.html' %}
 {% block context %}
-    <h1>Welcome, {{user}}</h1>
-    {% for picture in pictures %}
-        <img src="{{picture.image.url}}" width="50%" height="50%"alt="failure">
-    {% endfor %}
+    <h1>Welcome <strong>{{user}}</strong></h1>
+    <section class="container">
+        {% for picture in pictures %}
+        <div class = "column">
+            <a href="#" target = "_blank"><img src="{{picture.image.url}}" width="500px" alt="failure" style='width:100%'></a>
+        </div>
+        {% endfor %}
+    </section>
 {% endblock context%}

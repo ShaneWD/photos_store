@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 .ulist {
   list-style-type: none;
   margin: 0;
@@ -60,6 +64,20 @@ input[type=submit] {
   border-radius: 4px;
   cursor: pointer;
 }
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+  
+  /* Clearfix (clear floats) */
+.row::after {
+    content: "";
+    clear: both;
+    display: inline-block;
+}
+
 
 
 

@@ -3,6 +3,7 @@
 *.pyc
 *.png
 *.jpg
+*.jpeg
 .vscode
 .env
 pyvenv.cfg
