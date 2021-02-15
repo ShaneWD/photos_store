@@ -1,5 +1,7 @@
 {% extends 'main.html' %}
 {% block context %}
-    <h1>{{user}}</h1>
-    <img src="{{user.profile.image.url}}" width="50" height="50"alt="failure">
+    <h1>Welcome, {{user}}</h1>
+    {% for picture in pictures %}
+        <img src="{{picture.image.url}}" width="50%" height="50%"alt="failure">
+    {% endfor %}
 {% endblock context%}
