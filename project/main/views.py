@@ -21,5 +21,8 @@ def home(request):
 
 def detail(request, pk):
     picture = Pictures.objects.get(id=pk)
-    return HttpResponse("")
+    context = {
+        'picture': picture
+    }
+    return render(request, "main/detail.html", context)
 

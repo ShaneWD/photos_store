@@ -1,0 +1,10 @@
+{% extends 'main.html' %}
+{% block context %}
+    <div>
+        <h1>Author: {{picture.author}}<h1>
+        <img src="{{picture.image.url}}" style='width:500px'>
+        <h1>Title: {{picture.title}}<h1>
+        <h1>Description: {{picture.description}}<h1>
+        <h1>Tags: {{picture.tags}}<h1>
+    </div>
+{% endblock context%}
