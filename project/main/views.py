@@ -18,3 +18,8 @@ def home(request):
     }
     
     return render(request, "main/home.html", context)
+
+def detail(request, pk):
+    picture = Pictures.objects.get(id=pk)
+    return HttpResponse("")
+
