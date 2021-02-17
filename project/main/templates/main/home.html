@@ -4,7 +4,7 @@
     <section class="container">
         {% for picture in page_obj %}
         <div class = "column">
-            <a href="#" target = "_blank"><img src="{{picture.image.url}}" width="500px" alt="failure" style='width:100%'></a>
+            <a href="{% url 'detail' picture.id%}" target = "_blank"><img src="{{picture.image.url}}" width="500px" alt="failure" style='width:100%'></a>
         </div>
         {% endfor %}
     </section>
