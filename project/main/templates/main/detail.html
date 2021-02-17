@@ -1,10 +1,11 @@
 {% extends 'main.html' %}
 {% block context %}
-    <div>
-        <h1>Author: {{picture.author}}<h1>
-        <img src="{{picture.image.url}}" style='width:500px'>
-        <h1>Title: {{picture.title}}<h1>
-        <h1>Description: {{picture.description}}<h1>
-        <h1>Tags: {{picture.tags}}<h1>
+    <div class="card" style="width: 600px; padding: 2px 2px; border:1px solid rgb(100, 100, 100);display: block;margin-left: auto;margin-right: auto;">
+        <img class="card-img-top" style="width: 594px; border-radius: 4px;" src="{{picture.image.url}}" alt="Card image cap">
+            <div>
+                <h1 style="font-size: 20px"><strong style="font-size: 40px">{{picture.title}}</strong> by {{picture.author}}</h1>
+                <h1 style="font-size: 20px">Description: {{picture.description}}</h1>
+                <h1 style="font-size: 20px">Tags: {{picture.tags}}</h1>
+            </div>
     </div>
 {% endblock context%}
