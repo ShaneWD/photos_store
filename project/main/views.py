@@ -9,7 +9,7 @@ from django.core.paginator import Paginator
 @login_required
 def home(request):
     pictures = Pictures.objects.all()
-    paginator = Paginator(pictures, 3)
+    paginator = Paginator(pictures, 6)
     page_number = request.GET.get('page')
     page_obj = paginator.get_page(page_number)
     context = {
