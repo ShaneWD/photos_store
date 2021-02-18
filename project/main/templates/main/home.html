@@ -1,6 +1,6 @@
 {% extends 'main.html' %}
 {% block context %}
-    <h1 style="text-align: center">Welcome <strong>{{user}}</strong></h1>
+    <h1 style="text-align: center">Welcome <strong class='main-color'>{{user}}</strong></h1>
     <section class="container">
         {% for picture in page_obj %}
         <div class = "column">
@@ -8,9 +8,9 @@
         </div>
         {% endfor %}
     </section>
-    <section style="position: absolute; bottom: 10px; text-align: center">
+    <section>
         <div class="pagination" >
-            <span class="step-links">
+            <span class="step-links footer">
                 {% if page_obj.has_previous %}
                     <a href="?page=1">&laquo; first</a>
                     <a href="?page={{ page_obj.previous_page_number }}">previous</a>
