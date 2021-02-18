@@ -77,7 +77,20 @@ input[type=submit] {
     clear: both;
     display: inline-block;
 }
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
 
+.main-color {
+  /* color:rgb(0, 162, 255) */
+  color: rgb(0, 81, 255)
+}
 
 
 
