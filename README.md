@@ -7,5 +7,5 @@
 * ``` cd photos_store ```
 * ``` pip install -r requirements.txt ```
 * ``` cd project ```
-* create file named ".env", open it and type  **export SECRET_KEY= *create/use a django secret key here* **
+* create file named ".env", open it and type  **export SECRET_KEY= (remove the parentheses and create/use a django secret key here) **
 * ``` python manage.py migrate ```
